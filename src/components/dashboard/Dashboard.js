@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
 import ResultBox from "./resultBox/ResultBox";
-import { base_url, query } from "../utility/utility";
+import { base_url, getQuery, query } from "../utility/utility";
 import { setAnimeData, setLoading } from "../../store/actions/animeCAction";
 import Search from "../UI/search/Search";
 import css from "./Dashboard.module.css";
@@ -11,7 +11,7 @@ function Dashboard() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(setLoading(true));
-    fetch(`${base_url}?${query}`)
+    fetch(`${base_url}?${getQuery({})}`)
       .then((res) => res.json())
       .then((data) => {
         dispatch(setAnimeData(data));
