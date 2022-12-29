@@ -1,0 +1,17 @@
+.search-bar{
+    position: absolute; 
+    width: 60%;
+    bottom: 5vh;
+}
+.search-bar input,.search-bar span{
+    color: azure;
+    background-color: #fff3;
+}
+.search-bar ::placeholder{
+    color: rgba(240, 255, 255, 0.519);
+}
+
+.search-bar :focus{
+    color: azure;
+    background-color: #fff3;
+}

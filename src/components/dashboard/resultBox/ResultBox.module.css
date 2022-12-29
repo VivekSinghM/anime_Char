@@ -1,0 +1,13 @@
+.result-box{
+    background-color: #fff3;
+    height: 70vh;
+    border-radius: 8px;
+    min-width: 520px;
+    overflow: auto;
+    position: relative;
+}
+
+
+.results{
+    overflow: auto;
+}

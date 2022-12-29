@@ -1,13 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+html,body{
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+}
 body {
   margin: 0;
+  /* font-family: "Hachi Maru Pop",cursive; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://images3.alphacoders.com/681/681016.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.pagination .page-link {
+  background-color: rgba(255, 255, 255, 0.338);
+  color: wheat;
+}
+.pagination .page-item.disabled .page-link{
+  background-color: #fff3;
+  color: rgba(245, 222, 179, 0.632);
 }
